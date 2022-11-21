@@ -7,19 +7,21 @@
 // 9012 -> 12
 
 Console.WriteLine("Введите число");
-string num = Console.ReadLine();
+int num = Convert.ToInt32(Console.ReadLine());
 
- int SumNumbers(string num)
+string arr = Convert.ToString(num); 
+
+ int SumNumbers(string arr)
 {
      int res = 0;
-     int [] array = new int[num.Length];
+     int [] array = new int[arr.Length];
 
     for(int i = 0; i < array.Length; i++)
         {    
-              array[i] = int.Parse(Convert.ToString(num[i]));
+              array[i] = int.Parse(Convert.ToString(arr[i]));
               res += array[i];
         }
         return res; 
 }
 
-  Console.WriteLine($"Ответ: {SumNumbers(num)}");
+  Console.WriteLine($"Ответ: {SumNumbers(arr)}");
