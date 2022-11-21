@@ -10,16 +10,15 @@ int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите степень числа,  в которую нужно возвести");
 int b = Convert.ToInt32(Console.ReadLine());
 
-int DegreeOfNumber(int a , int b)
+int DegreeOfNumber(int a, int b)
 {
     int res = 1;
 
-    for(int i = 1; i <= b; i++)
+    for (int i = 1; i <= b; i++)
     {
         res *= a;
     }
     return res;
 }
 
- Console.WriteLine($"Ответ: {DegreeOfNumber(a , b)}");
- 
+Console.WriteLine($"Ответ: {DegreeOfNumber(a, b)}");
